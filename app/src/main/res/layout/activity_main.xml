@@ -1,0 +1,45 @@
+<!-- res/layout/activity_main.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Currency Converter"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <!-- Số tiền nguồn -->
+    <EditText
+        android:id="@+id/sourceAmountEditText"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:hint="Enter amount"
+        android:inputType="numberDecimal" />
+
+    <!-- Chọn đồng tiền nguồn -->
+    <Spinner
+        android:id="@+id/sourceCurrencySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:entries="@array/currency_options" />
+
+    <!-- Số tiền đích -->
+    <EditText
+        android:id="@+id/targetAmountEditText"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:hint="Converted amount"
+        android:inputType="numberDecimal" />
+
+    <!-- Chọn đồng tiền đích -->
+    <Spinner
+        android:id="@+id/targetCurrencySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:entries="@array/currency_options" />
+
+</LinearLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Currency Converter</string>
+
+    <!-- Định nghĩa mảng cho các loại tiền tệ -->
+    <string-array name="currency_options">
+        <item>USD</item>
+        <item>EUR</item>
+        <item>VND</item>
+    </string-array>
+</resources>
